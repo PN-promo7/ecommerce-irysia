@@ -1,0 +1,612 @@
+ /* ////////////////////////////////////////////////////////////// */
+ /* Règles globales du css */
+ * {
+   box-sizing: border-box;
+ }
+
+ html, body {
+   width: 100%;
+ }
+
+ body {
+   max-width: 100%;
+   font-family: 'Raleway', sans-serif;
+   margin: 0 auto;
+ }
+
+ .container {
+   width: 1170px;
+   margin: 0 auto;
+ }
+
+ .clearfix {
+   clear: both;
+ }
+
+ .responsive {
+   display: none;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* MIS EN TEXTES GENERALES */
+ h1, h2, ul {
+   font-family: 'Annie Use Your Telescope', cursive;
+   margin: 0;
+ }
+
+ h1 {
+   color: black;
+   font-size: 3rem;
+   text-transform: uppercase;
+ }
+
+ h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+  }
+
+ h3 {
+   font-family: 'Raleway', sans-serif;
+   color: #000000;
+   font-size: 1rem;
+   font-weight: 600;
+   margin-bottom: 10px;
+   margin-top: 0;
+   display: inline-block;
+ }
+
+ p {
+   font-family: 'Raleway', sans-serif;
+   font-size: 1.7rem;
+   margin: 0;
+   margin-bottom: 10px;
+ }
+
+ p.nav-username {
+   color: #000000;
+   font-size: 0.9rem;
+   text-align: center;
+   margin: 0 auto;
+   margin-right: 10px;
+ }
+
+ span {
+   color: #E6DFB8;
+   text-transform: uppercase;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* LISTES & LIENS  */
+ ul {
+   font-family: 'Raleway', sans-serif;
+   list-style: none;
+   font-size: 1.2rem;
+ }
+
+ nav ul {
+   display: flex;
+   padding: 0;
+   margin: 0px 20px;
+ }
+
+ nav li {
+   text-align: center;
+   margin: 0px 50px;
+ }
+
+ .txt-link {
+   text-decoration: none;
+   color: #000000;
+ }
+
+ .txt-link:hover {
+   text-decoration: none;
+   color: #99957A;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* BOUTONS */
+ .btn {
+   display: inline-flex;
+   border: 1px solid #ffffff;
+   border-radius: 10px;
+   padding: 5px 100px;
+   background-color: #ffffff;
+   margin: 20px 0px;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .txtbtn {
+   color: #807C66;
+   opacity: 5;
+   text-decoration: none;
+   margin: 0;
+   text-shadow: #807C66 0em 0em 0em;
+   font-size: 1.2rem;
+ }
+
+ .txtbtn:hover {
+   color: #000000;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* NAVIGATIONPRINCIPALE */
+ /* //////////////////////////////////////////////////////////////// */
+ .main-nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: #ffffff;
+   box-shadow: 0px 4px 0px 0px #ffffff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+ }
+ /* Container pour la navigation*/
+ .nav-container {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+   width: 1170px;
+   padding: 5px 0px;
+   z-index: 1;
+ }
+
+ .buisness-logo {
+   height: 65px;
+   padding-top: 5px;
+ }
+
+ .account {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+
+ .nav-icons {
+   height: 35px;
+   margin: 5px 5px;
+   align-items: center;
+ }
+ /* Positionnement de la ligne décorative beige en bas de la navigation */
+ nav .ornements {
+   position: fixed;
+   top: 71px;
+   left: 40px;
+   z-index: 1;
+ }
+ /* ///////////////////////////////////////////// */
+ /* HEADER */
+ /* /////////////////////////////////////////////// */
+ header {
+   background-image: url(../pictures/perles_exposition.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-bottom: 100px;
+   margin-top: 82px;
+ }
+ /* Positionnement de l'illustration main bracelet dans le header */
+ header .ornements {
+   float: right;
+   width: 50%;
+ }
+ /* Postionnement de la partie texte du header  */
+ .head-txt {
+   text-align: right;
+   color: #ffffff;
+   text-shadow: #807C66 0.1em 0.1em 0.2em;
+   padding: 20px;
+ }
+ /* ///////////////////////////////////////////////////////// */
+ /* SECTION PRODUIT */
+ /* /////////////////////////////////////////////// */
+ /* general des produits */
+ .products {
+   display: flex;
+   margin: 100px 0px;
+ }
+ /* ////////////////////////////// */
+ /* Traitement  par produit */
+ .single-product {
+   width: 25%;
+   display: flex;
+   flex-direction: row;
+   align-items: space-between;
+   margin: 0 10px;
+   border: 1px solid black;
+   box-shadow: 10px 10px #E6DFB8;
+ }
+
+ .single-product:first-child {
+   margin-left: 0px;
+ }
+
+ .single-product:nth-child(4n) {
+   margin-right: 0px;
+ }
+ /* ////////////////////////////// */
+ /* Contenu visuel fixe du produit */
+ .view-fix {
+   position: relative;
+ }
+
+ .product-img {
+   width: 100%;
+ }
+ /* icone favoris */
+ .fav {
+   width: 10%;
+   position: absolute;
+   right: 15px;
+   bottom: 15px;
+ }
+ /*hover favoris */
+ .fav-fix {
+   opacity: 1;
+ }
+
+ .fav-mov {
+   opacity: 0;
+ }
+
+ .fav-fix:hover .fav-mov {
+   opacity: 1;
+ }
+ /* nom créateur */
+ .artist {
+   font-family: 'Annie Use Your Telescope', cursive;
+   color: #E6DFB8;
+   text-decoration: none;
+   font-size: 1.2rem;
+   font-weight: 400;
+   position: absolute;
+   right: 20px;
+   top: 7px;
+ }
+ /* hover du nom créateur */
+ .artist:hover {
+   color: #807C66;
+   text-decoration: none;
+ }
+ /* ////////////////////////////// */
+ /* contenu du hover visuel */
+ .shop {
+   width: 100%;
+ }
+ /* ////////////////////////////// */
+ /* traitement du hover visuel produit */
+ .view-hover {
+   width: 60%;
+   position: absolute;
+   bottom: 20px;
+   left: 10px;
+   opacity: 0;
+   transition: .5s ease;
+ }
+
+ .view-fix:hover .view-hover {
+   opacity: 1;
+ }
+ /* ////////////////////////////// */
+ /* Partie description produit */
+ .product-script {
+   padding: 5px 5px;
+   margin: 10px 0px;
+ }
+ /* Mise en texte descrption */
+ /* Positionnement &hover description */
+ .product-name:hover {
+   color: #807C66;
+ }
+
+ .product-component {
+   display: inline-block;
+   font-size: 0.7rem;
+ }
+
+ .product-price {
+   display: inline-block;
+   font-size: 1.2rem;
+   margin-right: 10px;
+   float: right;
+   color: #807C66;
+ }
+ .fullwidth {
+   width:100%;
+ }
+ /* //////////////////////////////////////////////////////////// */
+ /* SECTION CATEGORIES */
+ /* ////////////////////////////////////////////////////////////// */
+ .categories {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: relative;
+   margin: 100px 0px;
+ }
+ /* Elimination de la marge à droite pour la dernière image de la section */
+ .categories div:nth-child(3) {
+   margin-right: 0;
+ }
+ /* traitemement des images paysage */
+ .landscape-column{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 35%;
+   margin-right: 20px;
+ }
+ /* ////////////////////////////// */
+ /* positionnement de l'illustration panneaux dans la section */
+ .logo-categorie {
+   position: absolute;
+   top: 173px;
+   left: 202px;
+   width: 350px;
+ }
+ /* traitement des images portrait */
+ .portrait {
+   width: 31%;
+   margin-right: 20px;
+   position: relative;
+ }
+ /* positionnement des images paysage pour mettre en place les titres */
+ .landscape {
+   position: relative;
+ }
+
+.portrait img, .landscape img {
+  width: 100%;
+}
+ /* ////////////////////////////// */
+ /* traitement liens & hover */
+ .categories a {
+   position: absolute;
+   top: 0;
+   left: 0px;
+   width: 100%;
+   height: 98%;
+   opacity: 0;
+   transition: 0.5s;
+ }
+
+ .categories a:hover {
+   background-color: #807C66;
+   width: 100%;
+   height: 99%;
+   opacity: 0.5;
+ }
+
+.portrait a:hover {
+   height: 99.5%;
+ }
+ /* ///////////////////////////////// */
+ /* /////////////////////////background promo & entreprise///////// */
+ /* ///////////////////////////////// */
+ .bg-buisness-promotion {
+   background-image: url(../pictures/jewelry_arms.jpg);
+   background-position: 0px -65px;
+   background-repeat: no-repeat;
+   padding: 50px 0px;
+ }
+ /* ////////////////////////////// */
+ /* SECTION PROMO */
+ /* ////////////////////////////// */
+ /* général promotion */
+ .promotion {
+   margin-bottom: 50px;
+ }
+
+ .promotion .container {
+   display: flex;
+   flex-direction: row wrap;
+ }
+ /* ////////////////////////////// */
+ /* traitement & positionnement News & dons */
+ .newsletter, .donations {
+   width: 49%;
+   flex-flow: column wrap;
+   align-items: center;
+   color: #ffffff;
+   text-align: center;
+   padding: 20px;
+   margin: 0px 20px;
+ }
+ /* mise en texte promotion */
+ .promotion h2 {
+   margin-bottom: 10px;
+   position: relative;
+   bottom: 0px;
+   left: 0px;
+ }
+
+ .promotion p {
+   font-size: 1.2rem;
+   margin-bottom: 15px;
+ }
+ /* traitement et position contenus NEWSLETTER */
+ .mail {
+   width: 60%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 5px;
+   background-color: #ffffff;
+   border-radius: 30px 0;
+   margin: 0 auto;
+ }
+
+ .mail input {
+   font-size: 1rem;
+   color: #000000;
+   opacity: 0.5;
+   border: 1px solid white;
+ }
+
+ .mail input:focus{
+   outline: none;
+ }
+ .mail button{
+   height: 27px;
+   border: 0px;
+   outline: none;
+ }
+
+.mail button:active img {
+  width: 15px;
+}
+ .mail img {
+   width: 20px;
+   opacity: 0.6;
+ }
+ /* traitement et position contenus DONATIONS */
+ .donations .btn {
+   margin: 5px;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* SECTION ENTREPRISE */
+ /* ////////////////////////////////////////////////////////////// */
+ /* général partie entreprise */
+ .buissness .container {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+ }
+ /* lignes décoratives entre les bulles */
+ .buisness-line {
+   width: 114px;
+ }
+ /* général des bulles */
+ .bubble {
+   width: 150px;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #807C66;
+   border-radius: 50%;
+   padding: 40px 15px;
+ }
+ /* traitement contenu bulles */
+ .bubble p {
+   color: #ffffff;
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   padding: 10px;
+ }
+
+ .bubble img {
+   width: 50%;
+   padding-left: 10px;
+ }
+ /* traitement & postition des bulles avec du contenu en colonne */
+ .column {
+   flex-direction: column;
+   text-align: center;
+ }
+
+ .column img {
+   width: 63%;
+   padding-left: 0;
+ }
+ /*////////////////////////////////////////////////////////////// */
+ /* ANCRE BAS PAGE */
+ /*////////////////////////////////////////////////////////////// */
+ .anchor{
+   display: inline-block;
+   position: fixed;
+   bottom: 0px;
+   right: 0px;
+   opacity: 0.5;
+   z-index: 1;
+ }
+
+ .anchor img {
+   width: 45px;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* FOOTER */
+ /* ////////////////////////////////////////////////////////////// */
+ footer {
+   width: 100%;
+   background-color: #807C66;
+   padding-top: 10px;
+ }
+
+ footer .container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+ }
+ /* ////////////////////////////////////////////////////////////// */
+ /* navigation footer */
+ .footer-list {
+   width: 50%;
+   display: flex;
+  }
+
+  .footer-list li {
+    margin: 5px 0;
+  }
+
+  .footer-list .txt-link{
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .footer-list .txt-link:hover{
+    color: black;
+  }
+ /* ////////////////////////////////////////////////////////////// */
+ /* reseaux sociaux */
+ .footer-social {
+   width: 54%;
+   display: flex;
+   justify-content: flex-end;
+ }
+ /* contenant icones réseaux  */
+ .social-icons {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 5px 0px;
+ }
+
+ .social-icons p {
+   color: white;
+   font-size: 1rem;
+   margin-right: 5px;
+ }
+ /* liens des icones réseaux */
+ .social-icons a {
+   color: white;
+   text-decoration: none;
+   font-size: 5rem;
+   margin-left: 10px;
+ }
+ /* images entreprise réseaux */
+ .social-icons img {
+   height: 100px;
+ }
+ /* ligne décorative réseaux */
+ .social-deco-line {
+   width: 36%;
+ }
+ /* mot décoratif "suivez nous" réseaux */
+ .social-deco-word {
+   position: absolute;
+   top: 30px;
+   right: 76px;
+   color: white;
+   font-size: 18px;
+ }

@@ -1,0 +1,579 @@
+/* /////////////////////////////////// */
+/* Smartphones (portrait) ----------- */
+/* /////////////////////////////////// */
+@media only screen and (max-device-width : 480px) {
+
+  /* général*/
+  html, body, .container {
+    width: 100%;
+  }
+
+  .responsive {
+    display: flex;
+  }
+
+  .no-responsive {
+    display: none;
+  }
+
+  /* textes */
+  h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  .newsletter h2, .promotion h2 {
+    font-size: 1.5rem;
+    top: 0px;
+    left: 0px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  /* redimensionnement  et orientation des différents container du site */
+  .promotion .container, .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter, .donations {
+    width: 100%;
+  }
+
+  .buissness .container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* navigation PRINCIPALE */
+  .account {
+    width: 67%;
+    justify-content: space-around;
+  }
+
+  .phone-nav {
+    width: 30px;
+  }
+
+  .nav-container .ornements {
+    display: none;
+  }
+
+  /* ligne separation */
+  img.ornements {
+    width: 100%;
+  }
+
+  /* ajustements header */
+  header {
+    background-position: 28% 0;
+    margin-bottom: 60px;
+  }
+
+  div.head-txt {
+    padding-top: 55px;
+  }
+
+  .head-script {
+    display: none;
+  }
+
+  .btn {
+    margin-top: 70px;
+    padding: 5px 85px;
+  }
+
+  /* ajustements produits */
+  .products {
+    margin: 20px 0px;
+  }
+
+  .single-product {
+    width: 90%;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .view-hover {
+    width: 42%;
+    opacity: 1;
+    left: 4px;
+    top: 8px;
+  }
+
+  .product-script {
+    margin: 0;
+  }
+
+  .product-component {
+    font-size: 0.8rem;
+  }
+
+  .artist {
+    text-decoration: underline;
+  }
+
+  .product-price {
+    margin-top: 5px;
+  }
+
+  /* ajustements catégories */
+  .categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 60px 0px;
+    justify-content: space-between;
+  }
+
+  .categories div:nth-child(3) {
+    margin-right: 0px;
+  }
+
+  .landscape-column {
+    width: 100%;
+    margin: 0px 0px;
+  }
+
+  .portrait {
+    width: 48%;
+    margin: 5px 0px;
+  }
+
+  /* ajustements bandeau promo */
+  .bg-buisness-promotion {
+    padding: 20px 0;
+    background-position: -757px 0px;
+  }
+
+  .promotion {
+    margin-bottom: 0;
+  }
+
+  .newsletter, .donations {
+    margin-bottom: 30px;
+    background-color: rgba(128, 124, 102, 0.5);
+  }
+
+  .promotion p {
+    font-size: 0.9rem;
+  }
+
+  .mail {
+    width: 100%;
+  }
+
+  .mail input {
+    font-size: 0.7rem;
+  }
+
+  .donation span {
+    margin-top: 20px;
+  }
+
+  /* ajustement entreprise */
+  .bubble {
+    margin-bottom: 20px;
+  }
+
+  /* ajustements footer */
+  footer .container {
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+
+  .footer-list, .footer-social {
+    width: 90%;
+    justify-content: space-around;
+  }
+
+  footer ul {
+    padding-left: 10px;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .footer-list .txt-link {
+    font-size: 0.6rem;
+    margin-bottom: 0px;
+  }
+
+  .social-icons {
+    width: 100%;
+    padding: 0 4px;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+
+  .social-icons p {
+    width: 100%;
+    font-size: 0.5rem;
+    margin-right: 0px;
+    text-align: right;
+  }
+
+  .social-deco-line {
+    width: 17%;
+  }
+
+  .social-deco-word {
+    display: none;
+  }
+
+  /* ancre bas de page */
+  .anchor {
+    display: none;
+  }
+}
+
+/* special iphone5 et galaxie */
+@media only screen and (device-width : 320px) {
+  .social-deco-line {
+    display: none;
+  }
+}
+
+@media only screen and (device-width : 360px) {
+  .social-deco-line {
+    width: 13%;
+  }
+}
+
+/* //////////////////////////////////// */
+/* Smartphones (landscape)  et surface duo----------- */
+/* /////////////////////////////////// */
+@media only screen and (min-device-width : 540px) and (max-device-width : 1024px) {
+
+  /* général */
+  html, body, .container, nav.container {
+    width: 100%;
+  }
+
+  .responsive {
+    display: flex;
+  }
+
+  .no-responsive {
+    display: none;
+  }
+
+  /* textes */
+  h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .newsletter h2, .promotion h2 {
+    font-size: 1.5rem;
+    top: 0px;
+    left: 0px;
+  }
+
+  h3 {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  /* redimensionnement  et orientation des différents container du site */
+  .promotion .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter, .donations {
+    width: 100%;
+  }
+
+  .buissness .container {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  /* navigation PRINCIPALE */
+  .buisness-logo {
+    margin-left: 10px;
+  }
+
+  .account {
+    width: 35%;
+    justify-content: space-around;
+  }
+
+  .phone-nav {
+    width: 30px;
+  }
+
+  .nav-container .ornements {
+    display: none;
+  }
+
+  /* ligne separation */
+  img.ornements {
+    width: 100%;
+  }
+
+  /* ajustements header */
+  header {
+    background-position: 28% 0;
+    margin-bottom: 60px;
+  }
+
+  div.head-txt {
+    padding-top: 55px;
+  }
+
+  .head-script {
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 5px 85px;
+  }
+
+  /* ajustements produits */
+  .products {
+    margin: 20px 0px;
+    justify-content: space-around;
+  }
+
+  .single-product {
+    width: 23%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .view-hover {
+    width: 42%;
+    opacity: 1;
+    left: 4px;
+    top: 8px;
+  }
+
+  .product-script {
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  .product-component {
+    font-size: 0.3rem;
+  }
+
+  .artist {
+    font-size: 0.3rem;
+    text-decoration: underline;
+    right: 7px;
+    top: 7px;
+  }
+
+  .fav {
+    right: 5px;
+    bottom: 10px;
+  }
+
+  .product-price {
+    margin-top: 9px;
+    margin-bottom: 0;
+    font-size: 0.3rem;
+  }
+
+  /* ajustement catégories */
+  .categories {
+    margin: 50px 0px;
+    justify-content: space-between;
+  }
+
+  /* ajustements bandeau promo */
+  .bg-buisness-promotion {
+    padding: 20px 0;
+    background-position: -757px 0px;
+  }
+
+  .promotion {
+    margin-bottom: 0;
+  }
+
+  .newsletter, .donations {
+    margin-bottom: 30px;
+    background-color: rgba(128, 124, 102, 0.5);
+  }
+
+  .promotion p {
+    font-size: 1rem;
+  }
+
+  .mail {
+    width: 50%;
+  }
+
+  .mail input {
+    font-size: 0.7rem;
+  }
+
+  .donation span {
+    margin-top: 20px;
+  }
+
+  /* ajustement entreprise */
+  .bubble {
+    margin-bottom: 20px;
+    width: 140px;
+    height: 140px;
+  }
+
+  /* ajustements footer */
+  footer .container {
+    flex-direction: row;
+  }
+
+  .footer-list, .footer-social {
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  footer ul {
+    padding-left: 10px;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .footer-list .txt-link {
+    font-size: 0.6rem;
+    margin-bottom: 0px;
+  }
+
+  .social-icons {
+    width: 100%;
+    padding: 0 4px;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+
+  .social-icons p {
+    width: 100%;
+    font-size: 0.5rem;
+    margin-right: 0px;
+    text-align: right;
+  }
+
+  .social-deco-line {
+    width: 12%;
+  }
+
+  .social-deco-word {
+    display: none;
+  }
+
+  /* ancre bas de page */
+  .anchor {
+    display: none;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/* CAS PARTICULIERS */
+/* special surface duo  et iphone 5*/
+@media only screen and (min-device-width : 540px) and (max-device-width : 600px) {
+  .bubble {
+    width: 130px;
+    height: 130px;
+  }
+
+  .footer-social {
+    width: 55%;
+  }
+
+  .social-deco-line {
+    display: none;
+  }
+}
+
+/* special iphone X & Smartphones (landscape) & ipad tablettes----------- */
+@media only screen and (min-device-width : 812px) and (max-device-width : 1024px) {
+  h3 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+
+  .product-component {
+    font-size: 0.5rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+
+  .artist {
+    font-size: 0.5rem;
+  }
+}
+
+/* ipad tablettes grandes */
+/* @media only screen and (min-width : 1024px) and (max-device-width : 1439px) {
+
+  html, body, .container, main {
+    width: 100%;
+  }
+
+  .ornements {
+    width: 100%;
+  }
+
+  nav .ornements {
+    left: 0;
+  }
+
+  .buisness-line {
+    width: 165px;
+  }
+
+  .social-deco-line {
+    width: 45%;
+  } */
+/* ajustements produits */
+/* .products {
+    margin: 100px 0px;
+    justify-content: space-around;
+  }
+
+  .single-product {
+    width: 23%;
+    margin: 0;
+  }
+
+  .view-hover {
+    width: 42%;
+    opacity: 1;
+    left: 4px;
+    top: 8px;
+  }
+
+  .bubble {
+    width: 130px;
+    height: 130px;
+  } */
+}
